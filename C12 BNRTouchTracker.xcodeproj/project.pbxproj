@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		F885A3841A04FB6C00C3A279 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F885A3831A04FB6C00C3A279 /* AppDelegate.swift */; };
-		F885A3861A04FB6C00C3A279 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F885A3851A04FB6C00C3A279 /* ViewController.swift */; };
 		F885A3891A04FB6C00C3A279 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F885A3871A04FB6C00C3A279 /* Main.storyboard */; };
 		F885A38B1A04FB6C00C3A279 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F885A38A1A04FB6C00C3A279 /* Images.xcassets */; };
 		F885A38E1A04FB6C00C3A279 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F885A38C1A04FB6C00C3A279 /* LaunchScreen.xib */; };
 		F885A39A1A04FB6C00C3A279 /* C12_BNRTouchTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F885A3991A04FB6C00C3A279 /* C12_BNRTouchTrackerTests.swift */; };
+		F885A3AC1A04FCC000C3A279 /* BNRLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F885A3AB1A04FCC000C3A279 /* BNRLine.swift */; };
+		F885A3AE1A04FDBE00C3A279 /* BNRDrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F885A3AD1A04FDBE00C3A279 /* BNRDrawView.swift */; };
+		F88933351A04FEA30027747B /* BNRDrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88933341A04FEA30027747B /* BNRDrawViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +31,15 @@
 		F885A37E1A04FB6C00C3A279 /* C12 BNRTouchTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "C12 BNRTouchTracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F885A3821A04FB6C00C3A279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F885A3831A04FB6C00C3A279 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F885A3851A04FB6C00C3A279 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F885A3881A04FB6C00C3A279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F885A38A1A04FB6C00C3A279 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F885A38D1A04FB6C00C3A279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F885A3931A04FB6C00C3A279 /* C12 BNRTouchTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "C12 BNRTouchTrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F885A3981A04FB6C00C3A279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F885A3991A04FB6C00C3A279 /* C12_BNRTouchTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C12_BNRTouchTrackerTests.swift; sourceTree = "<group>"; };
+		F885A3AB1A04FCC000C3A279 /* BNRLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNRLine.swift; sourceTree = "<group>"; };
+		F885A3AD1A04FDBE00C3A279 /* BNRDrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNRDrawView.swift; sourceTree = "<group>"; };
+		F88933341A04FEA30027747B /* BNRDrawViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNRDrawViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +82,10 @@
 			isa = PBXGroup;
 			children = (
 				F885A3831A04FB6C00C3A279 /* AppDelegate.swift */,
-				F885A3851A04FB6C00C3A279 /* ViewController.swift */,
 				F885A3871A04FB6C00C3A279 /* Main.storyboard */,
+				F885A3AB1A04FCC000C3A279 /* BNRLine.swift */,
+				F885A3AD1A04FDBE00C3A279 /* BNRDrawView.swift */,
+				F88933341A04FEA30027747B /* BNRDrawViewController.swift */,
 				F885A38A1A04FB6C00C3A279 /* Images.xcassets */,
 				F885A38C1A04FB6C00C3A279 /* LaunchScreen.xib */,
 				F885A3811A04FB6C00C3A279 /* Supporting Files */,
@@ -212,7 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F885A3861A04FB6C00C3A279 /* ViewController.swift in Sources */,
+				F885A3AE1A04FDBE00C3A279 /* BNRDrawView.swift in Sources */,
+				F88933351A04FEA30027747B /* BNRDrawViewController.swift in Sources */,
+				F885A3AC1A04FCC000C3A279 /* BNRLine.swift in Sources */,
 				F885A3841A04FB6C00C3A279 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +413,7 @@
 				F885A39F1A04FB6C00C3A279 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F885A3A01A04FB6C00C3A279 /* Build configuration list for PBXNativeTarget "C12 BNRTouchTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +422,7 @@
 				F885A3A21A04FB6C00C3A279 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

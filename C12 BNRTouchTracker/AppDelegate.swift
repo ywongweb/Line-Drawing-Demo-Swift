@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  C12 BNRTouchTracker
-//
-//  Created by Yee Wong on 01/11/2014.
-//  Copyright (c) 2014 Yee Wong. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
@@ -16,6 +8,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        let dvc = BNRDrawViewController()
+        self.window?.rootViewController = dvc
+        
+        self.window?.backgroundColor = UIColor.whiteColor()
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 
